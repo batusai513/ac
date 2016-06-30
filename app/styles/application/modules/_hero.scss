@@ -1,0 +1,28 @@
+.hero{
+  * {
+    color: inherit;
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $base-spacing-unit * 4 0 $base-spacing-unit * 4;
+  @media #{$small} {
+    padding: $base-spacing-unit * 6 0 $base-spacing-unit;
+  }
+}
+
+.hero--main{
+  background-image: url('../images/buildings-top.jpg');
+  color: white;
+  @media #{$small} {
+    background-size: auto;
+    @include rem(550px, height);
+  }
+}
+
+.hero--footer{
+  background-image: url('../images/buildings-bottom.jpg');
+  @media #{$small} {
+    background-size: auto;
+    @include rem(400px, height);
+  }
+}
