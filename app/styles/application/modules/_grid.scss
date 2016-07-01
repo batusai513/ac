@@ -10,6 +10,10 @@
   @extend %grid--full;
 }
 
+.grid--rev{
+  @extend %grid--rev;
+}
+
 .grid__item{
 	@extend %grid__item;
 }

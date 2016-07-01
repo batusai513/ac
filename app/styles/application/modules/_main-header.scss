@@ -2,4 +2,10 @@
 	background-color: transparent;
 	width: 100%;
 	padding: $half-spacing-unit 0;
+  &--positioned{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }

@@ -27,27 +27,27 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
+    <header class="main-header main-header--positioned">
       <div class="container container--small">
         <div class="grid">
-          <div class="grid__item small--one-half">
+          <div class="grid__item small--one-half text-center small--text-start">
             <h1 class="main-logo">
               <a href="#">
                 Ask Colleagues
               </a>
             </h1>
-          </div><div class="grid__item small--one-half">
-            <a href="#">Log in</a>
+          </div><div class="grid__item small--one-half text-center small--text-end">
+            <a class="color-white" href="#">Log in</a>
           </div>
         </div>
       </div>
     </header>
     <div class="hero hero--main">
       <div class="container container--small text-center">
-        <p>
+        <p class="hero-main-text">
           Exclusive marketplace <span>Only for Professionals</span>
         </p>
-        <a href="#" class="button button--large">Sign Up!</a>
+        <a href="#" class="button button--primary button--xl button--xwide">Sign Up!</a>
       </div>
     </div>
 
@@ -55,82 +55,116 @@
       <div class="container container--small">
         <div class="grid">
           <div class="grid__item small--one-half">
-            <h1>Exclusive Marketplace Only For Professionals</h1>
-            <p>
-              Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts
-            </p>
-          </div><div class="grid__item small--one-half text-center">
-            <img src="/images/ask-cards.jpg" width="365" alt="professionals posts" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pane pane--medium">
-      <div class="container container--small">
-        <div class="grid">
-          <div class="grid__item small--one-half text-center">
-            <img src="/images/ask-stack.jpg" width="365" alt="professionals posts" />
+            <div class="pane__text-container">
+              <h1>Exclusive Marketplace <br> Only For Professionals</h1>
+              <p>
+                Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts
+              </p>
+            </div>
           </div><div class="grid__item small--one-half">
-            <h1>Exclusive Marketplace Only For Professionals</h1>
-            <p>
-              Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts
-            </p>
+            <div class="text-center">
+              <img src="/images/ask-cards.jpg" width="365" alt="professionals posts" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pane pane--darks pane--medium">
+      <div class="container container--small">
+        <div class="grid grid--rev">
+          <div class="grid__item small--one-half">
+            <div class="pane__text-container">
+              <h1>Exclusive Marketplace <br> Only For Professionals</h1>
+              <p>
+                Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts
+              </p>
+            </div>
+          </div><div class="grid__item small--one-half">
+            <div class="text-center">
+              <img src="/images/ask-stack.jpg" width="365" alt="professionals posts" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="pane pane--medium">
-      <div class="container container--small">
-        <h1>Trending Now</h1>
-        <article>
-          <p>Question asked · May 4 · Electronics</p>
-          <h1>Can someone please recommend a nanny in New York?</h1>
-          <img src="#" alt="Michelle Herrera">
-          <p>Michelle Herrera <br> <small>Google, New York</small></p>
-          <p>
-            Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby. Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts. <a href="#">See more</a>
-          </p>
-          <p>
-            50 Answers
-          </p>
-          <a href="#" class="button button--small">
-            Answer
-          </a>
-        </article>
+      <div class="container container--smaller">
+        <h1 class="epsilon weight--bold">Trending Now</h1>
+        <div class="ask-item__container push--bottom">
+          <article class="ask-item">
+            <p class="ask-item__meta">Question asked · May 4 · Electronics</p>
+            <h1 class="ask-item__title">Can someone please recommend a nanny in New York?</h1>
+            <div class="media push-half--bottom user-box">
+              <div class="media__img media__img--small">
+                <img class="img--round" width="40" height="40" src="/images/dummy-user-1.jpg" alt="Michelle Herrera">
+              </div>
+              <div class="media__body">
+                <p class="user-box__name flush--bottom">Michelle Herrera</p>
+                <p class="user-box__meta flush--bottom">Google, New York</p>
+              </div>
+            </div>
+            <p class="ask-item__text">
+              Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby. Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts. <a class="underline" href="#">See more</a>
+            </p>
+            <p class="ask-item__extra">
+              50 Answers
+            </p>
+            <a href="#" class="button button--wide button--default">
+              Answer
+            </a>
+          </article>
+        </div>
 
-        <article>
-          <p>Marketplace · May 4 · Electronics</p>
-          <h1>Selling my 3 month old Ipad Pro</h1>
-          <img src="#" alt="Michelle Herrera">
-          <p>Michelle Herrera <br> <small>Google, New York</small></p>
-          <p>
-            Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby. Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts. <a href="#">See more</a>
-          </p>
-          <a href="#" class="button button--small">
-            I'm interested
-          </a>
-        </article>
+        <div class="ask-item__container">
+          <article class="ask-item">
+            <p class="ask-item__meta">Marketplace · May 4 · Electronics</p>
+            <h1 class="ask-item__title">Selling my 3 month old Ipad Pro</h1>
+            <div class="media push-half--bottom user-box">
+              <div class="media__img media__img--small">
+                <img class="img--round" width="40" height="40" src="/images/dummy-user-1.jpg" alt="Michelle Herrera">
+              </div>
+              <div class="media__body">
+                <p class="user-box__name flush--bottom">Michelle Herrera</p>
+                <p class="user-box__meta flush--bottom">Google, New York</p>
+              </div>
+            </div>
+            <p class="ask-item__text">
+              Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby. Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts. <a class="underline" href="#">See more</a>
+            </p>
+            <a href="#" class="button button--wide button--default">
+              I'm interested
+            </a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <div class="hero hero--footer">
-      <div class="container text-center">
-        <p>
-          Recommendations You Can Trust From Professionals Like You
-        </p>
+    <div class="hero hero-footer">
+      <div class="container text-center hero-footer__content">
+        <div class="newsletter">
+          <p class="newsletter__text">
+            Recommendations You Can Trust From Professionals Like You
+          </p>
 
-        <form action="">
-          <label class="sr-only" for="email">Enter email</label>
-          <input id="email" placeholder="Enter email" type="text">
-          <input type="submit" value="Submit">
-        </form>
+          <form action="">
+            <label class="sr-only" for="email">Enter email</label>
+            <div class="input-group">
+              <input class="form-control input--xl" id="email" placeholder="Enter email" type="text">
+              <span class="input-group-btn">
+                <input class="button button--primary button--xl newsletter__button" type="submit" value="Submit">
+              </span>
+            </div>
+          </form>
+        </div>
 
-        <footer>
-          © 2016 - 2017 Askcolleagues
-        </footer>
       </div>
+      <footer class="main-footer">
+        <div class="container container--small">
+          © 2016 - 2017 Askcolleagues
+        </div>
+      </footer>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

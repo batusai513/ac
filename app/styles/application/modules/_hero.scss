@@ -10,19 +10,45 @@
   }
 }
 
-.hero--main{
-  background-image: url('../images/buildings-top.jpg');
-  color: white;
+.hero-main-text{
+  font-size: em(18);
+  line-height: 1.2;
   @media #{$small} {
-    background-size: auto;
-    @include rem(550px, height);
+    font-size: em(33);
+  }
+  & > span{
+    font-size: em(26, 18);
+    display: block;
+    @media #{$small} {
+      font-size: em(44, 33);
+    }
   }
 }
 
-.hero--footer{
-  background-image: url('../images/buildings-bottom.jpg');
+.hero--main{
+  background-image: url('../images/buildings-top.jpg');
+  color: white;
+  padding: $base-spacing-unit * 5 0 $base-spacing-unit * 4;
   @media #{$small} {
     background-size: auto;
-    @include rem(400px, height);
+    padding: $base-spacing-unit * 7 0 $base-spacing-unit;
+    @include rem(500px, height);
+  }
+}
+
+.hero-footer{
+  background-image: url('../images/buildings-bottom.jpg');
+  padding-top: 0;
+  padding-bottom: 0;
+  @media #{$small} {
+    background-size: auto;
+  }
+  &__content{
+    padding-top: $base-spacing-unit * 4;
+    padding-bottom: $base-spacing-unit * 3;
+    @media #{$small} {
+      padding-top: $base-spacing-unit * 6;
+      padding-bottom: $base-spacing-unit * 5;
+    }
   }
 }

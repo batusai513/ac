@@ -1,4 +1,4 @@
-@mixin rem($dest: 16, $prop: "font-size"){
+@mixin rem($dest: $font-size-base, $prop: "font-size"){
   @if not unitless($dest) {
       $dest: strip-units($dest);
   }

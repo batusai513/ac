@@ -16,6 +16,7 @@
 @import "application/core/functions";
 
 //mixins
+@import "application/mixins/border-radius";
 @import "application/mixins/buttons";
 @import "application/mixins/box-sizing";
 @import "application/mixins/user-select";
@@ -43,6 +44,7 @@
 @import "application/core/layout";
 @import "application/core/grid";
 @import "application/core/lists";
+@import "application/core/images";
 
 //objects, use them directly in the html
 @import "application/objects/clearfix";
@@ -63,7 +65,10 @@
 @import "application/modules/main-navigation";
 @import "application/modules/main-footer";
 @import "application/modules/sticky-footer";
-@import "application/modules/round-icons";
+@import "application/modules/user-box";
+@import "application/modules/ask-item";
+@import "application/modules/newsletter";
+@import "application/modules/input-group";
 
 // Helpers
 @import "application/helpers/helpers";

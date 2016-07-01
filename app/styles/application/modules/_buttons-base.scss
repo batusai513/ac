@@ -78,6 +78,10 @@
     }
   }
 }
+
+.button--xl {
+  @include button-size($padding-xl-vertical, $padding-xl-horizontal, $font-size-large, $line-height-large, $btn-border-radius);
+}
 .button--large {
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius);
 }
@@ -91,6 +95,11 @@
 .button--wide{
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.button--xwide{
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .button--square{

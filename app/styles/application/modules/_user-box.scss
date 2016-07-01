@@ -1,0 +1,11 @@
+.user-box{
+  @include rem;
+  &__name{
+    color: black;
+    padding-top: em(2);
+  }
+  &__meta{
+    font-size: em(13);
+    color: #959595;
+  }
+}

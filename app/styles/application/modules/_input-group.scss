@@ -102,7 +102,7 @@
 
   > .button {
     position: relative;
-    border-color: $input-border;
+    border-color: transparent; //$input-border
     box-shadow: none;
     + .button {
       margin-left: -1px;

@@ -88,11 +88,15 @@ textarea.form-control{
 }
 
 .input--small {
-  @include input-size($input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+  @include input-size($input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, 0);
 }
 
 .input--large {
-  @include input-size($input-height-large, $padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-large, $border-radius-base);
+  @include input-size($input-height-large, $padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-large, 0);
+}
+
+.input--xl {
+  @include input-size($input-height-xl, $padding-xl-vertical, $padding-xl-horizontal, $font-size-base, $line-height-large, 0);
 }
 
 

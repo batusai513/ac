@@ -1,9 +1,6 @@
 .button--default {
   @include button-style($btn-default-color, $btn-default-bg, $btn-default-border);
 }
-.button-gradient--default {
-  @include button-style($btn-default-color, #E6EBEE, $btn-default-border);
-}
 .button--primary {
   @include button-style($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
@@ -22,4 +19,7 @@
 // Danger and error appear as red
 .button--danger {
   @include button-style($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+.button-gradient--default {
+  @include button-style($btn-default-color, #E6EBEE, $btn-default-border);
 }

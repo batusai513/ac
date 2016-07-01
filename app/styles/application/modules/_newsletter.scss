@@ -1,0 +1,18 @@
+.newsletter{
+  @include rem;
+  max-width: 760px;
+  margin: auto;
+  &__text{
+    color: white;
+    font-size: em(22);
+    @media #{$small} {
+      font-size: em(26);
+    }
+  }
+  &__button{
+    @media #{$medium} {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+  }
+}

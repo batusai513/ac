@@ -21,7 +21,7 @@ $font-family-icons:                "icon-family";
 
 $golden-ratio:                      1.4;
 
-$font-size-base:                    16px;
+$font-size-base:                    15px;
 $em-base:                           $font-size-base;
 $font-weight-base:                  400;
 $font-size-larger:                  floor($font-size-base * 1.15); //16px
@@ -51,14 +51,17 @@ $headings-color:                    inherit;
 $padding-base-vertical:             6px;
 $padding-base-horizontal:           12px;
 
-$padding-large-vertical:            10px;
-$padding-large-horizontal:          16px;
+$padding-xs-vertical:               1px;
+$padding-xs-horizontal:             5px;
 
 $padding-small-vertical:            5px;
 $padding-small-horizontal:          10px;
 
-$padding-xs-vertical:               1px;
-$padding-xs-horizontal:             5px;
+$padding-large-vertical:            14px;
+$padding-large-horizontal:          20px;
+
+$padding-xl-vertical:               20px;
+$padding-xl-horizontal:             26px;
 
 $line-height-large:                 1.33;
 $line-height-small:                 1.6; //1.5 when fs=14px
@@ -68,7 +71,7 @@ $border-radius-large:               5px;
 $border-radius-small:               3px;
 
 // Buttons
-$btn-font-family: 			inherit; //puede ser inherit
+$btn-font-family: 			          inherit; //puede ser inherit
 $btn-font-weight:                	600;
 $button-border-width:            	1px;
 
@@ -77,8 +80,8 @@ $btn-default-bg:                 	$brand-default;
 $btn-default-border:             	$brand-default;
 
 $btn-primary-color:              	white;
-$btn-primary-bg:                 	$color-brand;
-$btn-primary-border:             	$color-brand;
+$btn-primary-bg:                 	$brand-primary;
+$btn-primary-border:             	$brand-primary;
 
 $btn-success-color:              	#fff;
 $btn-success-bg:                 	$brand-success;
@@ -96,7 +99,7 @@ $btn-danger-color:               	#fff;
 $btn-danger-bg:                  	$brand-danger;
 $btn-danger-border:              	darken($btn-danger-bg, 5%);
 
-$btn-border-radius:        	 	 	4px;
+$btn-border-radius:        	 	 	  0px;
 $btn-link-disabled-color:        	$gray-light;
 
 
@@ -111,6 +114,7 @@ $input-border-focus:             	#66afe9;
 $input-color-placeholder:        	#cccccc;
 $input-height-base:              	($line-height-computed + ($padding-base-vertical * 2)) + ($button-border-width * 2);
 $input-height-large:             	(floor($font-size-base * $line-height-base) + ($padding-large-vertical * 2));
+$input-height-xl:                 (ceil($font-size-large * $line-height-base) + ($padding-xl-vertical * 2));
 $input-height-small:             	(floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2));
 $legend-color:                   	$brand-default;
 $legend-border-color:            	transparent;
