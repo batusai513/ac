@@ -10,6 +10,10 @@
   @extend %grid--full;
 }
 
+.grid--narrow{
+  @extend %grid--narrow;
+}
+
 .grid--rev{
   @extend %grid--rev;
 }
@@ -24,4 +28,28 @@
 
 .one-half{
   @extend %one-half;
+}
+
+.one-quarter{
+  @extend %one-quarter;
+}
+
+.three-quarters{
+  @extend %three-quarters;
+}
+
+.one-sixth{
+  @extend %one-sixth;
+}
+
+.five-sixths{
+  @extend %five-sixths;
+}
+
+.three-tenths{
+  @extend %three-tenths;
+}
+
+.seven-tenths{
+  @extend %seven-tenths;
 }

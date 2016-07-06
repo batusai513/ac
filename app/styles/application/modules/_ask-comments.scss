@@ -1,0 +1,9 @@
+.ask-comments{
+  padding: $half-spacing-unit;
+  border-radius: $border-radius-base;
+  border: 1px solid #EDEDED;
+  background-color: #F6F6F6;
+  & > *:last-child{
+    margin-bottom: 0;
+  }
+}

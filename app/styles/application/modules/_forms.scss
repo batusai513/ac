@@ -91,6 +91,10 @@ textarea.form-control{
   @include input-size($input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, 0);
 }
 
+.input--extra-small {
+  @include input-size($input-height-xs, $padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, 0);
+}
+
 .input--large {
   @include input-size($input-height-large, $padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-large, 0);
 }
