@@ -8,4 +8,8 @@
     top: 0;
     left: 0;
   }
+  &__bordered{
+    border-bottom: 1px solid $brand-ui;
+    margin-bottom: 25px;
+  }
 }

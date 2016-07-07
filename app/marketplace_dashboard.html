@@ -28,72 +28,119 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container">
-      <header class="main-header">
-        <div class="container container--small">
-          <div class="grid">
-            <div class="grid__item small--one-half text-center small--text-start">
-              <h1 class="main-logo">
-                <a href="#">
-                  Ask Colleagues
-                </a>
-              </h1>
-              <form action="#">
-                <div class="input-group">
-                  <input class="form-control input--small" type="text">
-                  <span class="input-group-btn">
-                    <input class="button button--small" type="submit" value="Search">
-                  </span>
-                </div>
-              </form>
-              <nav>
-                <a href="/question_and_answers.html">Q&amp;A</a>
-                <a href="/marketplace_dashboard.html">Marketplace</a>
-              </nav>
 
-            </div><div class="grid__item small--one-half text-center small--text-end">
-              <a class="color-white" href="#">Log in</a>
+      <header class="main-header main-header__bordered">
+        <div class="grid grid--middle">
+          <div class="grid__item two-thirds">
+            <div class="grid grid--middle">
+              <div class="grid__item one-half">
+                <h1 class="main-logo main-logo--dark">
+                  <a href="#">
+                    Ask Colleagues
+                  </a>
+                </h1>
+              </div><div class="grid__item one-half">
+                <form action="#">
+                  <div class="input-group">
+                    <input class="form-control input--small" type="text">
+                    <span class="input-group-btn">
+                      <input class="button button--small button--wide" type="submit" value="Search">
+                    </span>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div><div class="grid__item one-third">
+            <nav>
+              <ul class="nav flush--bottom">
+                <li class="nav__item vertical-align--middle">
+                  <a href="/question_and_answers.html">Q&amp;A</a>
+                </li>
+                <li class="nav__item vertical-align--middle">
+                  <a href="/marketplace_dashboard.html">Marketplace</a>
+                </li>
+                <li class="nav__item vertical-align--middle">
+                  <div class="media">
+                    <div class="media__img media__img--small">
+                      <img alt="" class="img--round" src="/images/dummy-user-small-1.jpg" width="28">
+                    </div>
+                    <div class="media__body">
+                      <a class="color-white" href="#">Brian</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </header>
 
       <div class="grid">
         <div class="grid__item one-sixth">
-          <h2 class="epsilon">My Bookmarks</h2>
-          <ul>
-            <li>google.com</li>
-            <li>time.com</li>
-          </ul>
+          <div class="filters">
+            <h2 class="epsilon filters__title bordered-item">My Bookmarks</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Location</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Company</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Category</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Time</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+          </div>
 
         </div><div class="grid__item five-sixths">
           <div class="grid">
             <div class="grid__item seven-tenths">
               <section>
-                <h1 class="epsilon weight--bold">Top Marketplace</h1>
+                <h1 class="epsilon bordered-item">Top Marketplace</h1>
                 <article class="ask-item">
-                  <p class="ask-item__meta">Question asked · May 4 · Electronics</p>
-                  <h1 class="ask-item__title">Selling my 3 month old Ipad Pro</h1>
-                  <div class="media push-half--bottom user-box">
-                    <div class="media__img media__img--small">
-                      <img class="img--round" width="40" height="40" src="/images/dummy-user-1.jpg" alt="Michelle Herrera">
+                  <div class="push--bottom">
+                    <p class="ask-item__meta">Question asked · May 4 · Electronics</p>
+                    <h1 class="ask-item__title">Selling my 3 month old Ipad Pro</h1>
+                    <div class="media push-half--bottom user-box">
+                      <div class="media__img media__img--small">
+                        <img class="img--round" width="40" height="40" src="/images/dummy-user-1.jpg" alt="Michelle Herrera">
+                      </div>
+                      <div class="media__body">
+                        <p class="user-box__name flush--bottom">Michelle Herrera</p>
+                        <p class="user-box__meta flush--bottom">Google, New York</p>
+                      </div>
                     </div>
-                    <div class="media__body">
-                      <p class="user-box__name flush--bottom">Michelle Herrera</p>
-                      <p class="user-box__meta flush--bottom">Google, New York</p>
+                    <p class="ask-item__text">
+                      Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby. Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts.
+                    </p>
+                    <div class="ask-item__images push-half--bottom">
+                      <img alt="" src="/images/dummy-attachment.jpg" width="86">
+                      <img alt="" src="/images/dummy-attachment.jpg" width="86">
+                      <img alt="" src="/images/dummy-attachment.jpg" width="86">
+                      <img alt="" src="/images/dummy-attachment.jpg" width="86">
                     </div>
+                    <a href="#" class="button button--extra-small button--wide button--default">
+                      I'm interested
+                    </a>
                   </div>
-                  <p class="ask-item__text">
-                    Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby. Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts.
-                  </p>
-                  <div class="ask-item__images push-half--bottom">
-                    <img alt="" src="" width="86">
-                    <img alt="" src="" width="86">
-                    <img alt="" src="" width="86">
-                    <img alt="" src="" width="86">
-                  </div>
-                  <a href="#" class="button button--extra-small button--wide button--default">
-                    I'm interested
-                  </a>
+
                   <section class="ask-comments">
                     <h1 class="sr-only">Item Comments</h1>
 
@@ -121,9 +168,22 @@
                           <img alt="" class="img--round" src="/images/dummy-user-small-1.jpg" width="28">
                         </div>
                         <div class="media__body">
-                          <h1 class="zeta">Brian Macy</h1>
-                          <p class="flush--bottom">Google, New York</p>
-                          <p>
+                          <h1 class="zeta ask-comment__title">Brian Macy <span> · Google, New York</span></h1>
+                          <p class="ask-comment__text">
+                            If you are lonking for a good school for your 4 old, then this is the best school., It is brilliant and teachers are amazing. My son really loves it and this is great value for money.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="ask-comment push--bottom">
+                      <div class="media">
+                        <div class="media__img media__img--small">
+                          <img alt="" class="img--round" src="/images/dummy-user-small-1.jpg" width="28">
+                        </div>
+                        <div class="media__body">
+                          <h1 class="zeta ask-comment__title">Brian Macy <span> · Google, New York</span></h1>
+                          <p class="ask-comment__text">
                             If you are lonking for a good school for your 4 old, then this is the best school., It is brilliant and teachers are amazing. My son really loves it and this is great value for money.
                           </p>
                         </div>
@@ -134,7 +194,7 @@
                 </article>
               </section>
             </div><div class="grid__item three-tenths">
-              <button class="button button--extra-small button--block">New Add</button>
+              <button class="button button--small button--block">New Add</button>
             </div>
           </div>
         </div>

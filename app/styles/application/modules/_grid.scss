@@ -30,6 +30,14 @@
   @extend %one-half;
 }
 
+.one-third{
+  @extend %one-third;
+}
+
+.two-thirds{
+  @extend %two-thirds;
+}
+
 .one-quarter{
   @extend %one-quarter;
 }

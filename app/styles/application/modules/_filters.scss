@@ -1,0 +1,25 @@
+.filters{
+  @include rem;
+  &__title{
+    font-size: em(15);
+    color: black;
+  }
+  &__list{
+    font-size: em(13);
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: $half-spacing-unit / 2;
+  }
+  &__item{
+
+  }
+}
+
+.bordered-item{
+  color: black;
+  font-size: em(15);
+  font-weight: 400;
+  padding-bottom: $half-spacing-unit / 2;
+  margin-bottom: $half-spacing-unit / 2;
+  border-bottom: 1px solid $brand-ui;
+}

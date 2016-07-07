@@ -1,9 +1,27 @@
 .ask-comments{
+  @include rem;
   padding: $half-spacing-unit;
   border-radius: $border-radius-base;
   border: 1px solid #EDEDED;
   background-color: #F6F6F6;
   & > *:last-child{
     margin-bottom: 0;
+  }
+}
+
+.ask-comment{
+  color: black;
+  &__title{
+    font-size: em(13);
+    font-weight: bold;
+    margin-bottom: $half-spacing-unit / 2;
+    > span{
+      color: #959595;
+      font-weight: normal;
+    }
+  }
+  &__text{
+    font-size: em(13);
+    line-height: $line-height-small;
   }
 }
