@@ -13,11 +13,10 @@ $brand-danger:            #d9534f !default;
 $brand-ui:                #DFDFDF;
 $brand-default:           #DFDFDF;
 
-
 $color-brand:             #70ABA9;
 
 $body-bg:                 white;
 $hr-border:               $gray-lighter;
-$link-color:              $brand-info;
+$link-color:              $color-brand;
 $link-hover-color:        darken($link-color, 15%);
 $color-text-body:         $gray;

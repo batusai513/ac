@@ -1,10 +1,16 @@
 .main-navigation{
+  @include rem(14);
 	font-family: $font-family-sans-serif;
 	&__item{
+    font-weight: bold;
+    & + &{
+      padding-left: $half-spacing-unit / 2;
+    }
 		&.is-active a{
-			background-color: $gray-light;
-			background-color: rgba($gray-light, 0.12);
+			color: $color-brand;
 		}
 	}
-	&--index{}
+	&__link{
+    color: #717171;
+  }
 }

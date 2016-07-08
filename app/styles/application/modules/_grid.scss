@@ -30,6 +30,10 @@
   @extend %one-half;
 }
 
+.small--one-half{
+  @extend %small--one-half;
+}
+
 .one-third{
   @extend %one-third;
 }
@@ -46,18 +50,26 @@
   @extend %three-quarters;
 }
 
-.one-sixth{
-  @extend %one-sixth;
+.large--one-quarter{
+  @extend %large--one-quarter;
 }
 
-.five-sixths{
-  @extend %five-sixths;
+.large--three-quarters{
+  @extend %large--three-quarters;
 }
 
-.three-tenths{
-  @extend %three-tenths;
+.medium--one-sixth{
+  @extend %medium--one-sixth;
 }
 
-.seven-tenths{
-  @extend %seven-tenths;
+.medium--five-sixths{
+  @extend %medium--five-sixths;
+}
+
+.large--three-tenths{
+  @extend %large--three-tenths;
+}
+
+.large--seven-tenths{
+  @extend %large--seven-tenths;
 }

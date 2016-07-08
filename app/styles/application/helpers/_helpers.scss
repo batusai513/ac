@@ -48,3 +48,7 @@
 .relative{
   position: relative;
 }
+
+.border-radius-small{border-radius: $border-radius-small;}
+.border-radius-base{border-radius: $border-radius-base;}
+.border-radius-large{border-radius: $border-radius-large;}

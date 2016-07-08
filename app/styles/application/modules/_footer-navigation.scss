@@ -1,0 +1,16 @@
+.footer-navigation{
+  &__item{
+    color: #959595;
+    &:after{
+      padding-right: $half-spacing-unit / 2;
+      margin-left: $half-spacing-unit / 2;
+      content: "|";
+    }
+    &:last-child:after{
+      content: none;
+    }
+  }
+  &__link{
+    color: #959595;
+  }
+}

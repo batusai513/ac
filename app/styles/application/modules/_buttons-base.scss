@@ -1,5 +1,5 @@
 .button {
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, $line-height-small, $btn-border-radius);
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, $line-height-small, $border-radius-base);
   @include user-select(none);
   display: inline-block;
   margin-bottom: 0;
@@ -80,16 +80,16 @@
 }
 
 .button--xl {
-  @include button-size($padding-xl-vertical, $padding-xl-horizontal, $font-size-large, $line-height-large, $btn-border-radius);
+  @include button-size($padding-xl-vertical, $padding-xl-horizontal, $font-size-large, $line-height-large, $border-radius-base);
 }
 .button--large {
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius);
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-base);
 }
 .button--small {
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius);
+  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
 }
 .button--extra-small {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius);
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
 }
 
 .button--wide{

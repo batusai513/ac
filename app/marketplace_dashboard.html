@@ -31,41 +31,41 @@
 
       <header class="main-header main-header__bordered">
         <div class="grid grid--middle">
-          <div class="grid__item two-thirds">
+          <div class="grid__item large--three-quarters">
             <div class="grid grid--middle">
-              <div class="grid__item one-half">
+              <div class="grid__item text-center small--text-start small--one-half">
                 <h1 class="main-logo main-logo--dark">
                   <a href="#">
                     Ask Colleagues
                   </a>
                 </h1>
-              </div><div class="grid__item one-half">
+              </div><div class="grid__item small--one-half">
                 <form action="#">
                   <div class="input-group">
-                    <input class="form-control input--small" type="text">
+                    <input class="form-control input--shadow input--small" type="text">
                     <span class="input-group-btn">
-                      <input class="button button--small button--wide" type="submit" value="Search">
+                      <input class="button button--white button--small button--wide" type="submit" value="Search">
                     </span>
                   </div>
                 </form>
               </div>
             </div>
-          </div><div class="grid__item one-third">
+          </div><div class="grid__item large--one-quarter text-center small--text-end">
             <nav>
-              <ul class="nav flush--bottom">
-                <li class="nav__item vertical-align--middle">
-                  <a href="/question_and_answers.html">Q&amp;A</a>
+              <ul class="nav main-navigation flush--bottom">
+                <li class="nav__item main-navigation__item vertical-align--middle">
+                  <a class="main-navigation__link" href="/question_and_answers.html">Q&amp;A</a>
                 </li>
-                <li class="nav__item vertical-align--middle">
-                  <a href="/marketplace_dashboard.html">Marketplace</a>
+                <li class="nav__item main-navigation__item vertical-align--middle is-active">
+                  <a class="main-navigation__link" href="/marketplace_dashboard.html">Marketplace</a>
                 </li>
-                <li class="nav__item vertical-align--middle">
+                <li class="nav__item main-navigation__item vertical-align--middle">
                   <div class="media">
                     <div class="media__img media__img--small">
                       <img alt="" class="img--round" src="/images/dummy-user-small-1.jpg" width="28">
                     </div>
                     <div class="media__body">
-                      <a class="color-white" href="#">Brian</a>
+                      <a class="main-navigation__link" href="#">Brian</a>
                     </div>
                   </div>
                 </li>
@@ -75,43 +75,10 @@
         </div>
       </header>
 
-      <div class="grid">
-        <div class="grid__item one-sixth">
-          <div class="filters">
-            <h2 class="epsilon filters__title bordered-item">My Bookmarks</h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item">By Location</h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item">By Company</h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item">By Category</h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item">By Time</h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-          </div>
-
-        </div><div class="grid__item five-sixths">
+      <div class="grid grid--rev">
+        <div class="grid__item medium--five-sixths">
           <div class="grid">
-            <div class="grid__item seven-tenths">
+            <div class="grid__item large--seven-tenths">
               <section>
                 <h1 class="epsilon bordered-item">Top Marketplace</h1>
                 <article class="ask-item">
@@ -136,12 +103,12 @@
                       <img alt="" src="/images/dummy-attachment.jpg" width="86">
                       <img alt="" src="/images/dummy-attachment.jpg" width="86">
                     </div>
-                    <a href="#" class="button button--extra-small button--wide button--default">
+                    <a href="#" class="button button--info button--extra-small button--wide">
                       I'm interested
                     </a>
                   </div>
 
-                  <section class="ask-comments">
+                  <section class="ask-comments push--bottom">
                     <h1 class="sr-only">Item Comments</h1>
 
                     <div class="media push--bottom">
@@ -154,7 +121,7 @@
                             <div class="grid__item three-quarters">
                               <input class="form-control input--extra-small" placeholder="Leave public comment for saller" type="text">
                             </div><div class="grid__item one-quarter">
-                              <input class="button button--extra-small button--block" type="submit" value="Comment">
+                              <input class="button button--brand button--extra-small button--block" type="submit" value="Comment">
                             </div>
                           </div>
 
@@ -193,17 +160,66 @@
                   </section>
                 </article>
               </section>
-            </div><div class="grid__item three-tenths">
-              <button class="button button--small button--block">New Add</button>
+            </div><div class="grid__item large--three-tenths">
+              <button class="button button--brand button--small button--block push--bottom">New Add</button>
             </div>
           </div>
+        </div><div class="grid__item medium--one-sixth">
+          <div class="filters">
+            <h2 class="epsilon filters__title bordered-item">My Bookmarks</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Location</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Company</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Category</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+
+            <h2 class="epsilon filters__title bordered-item">By Time</h2>
+            <ul class="filters__list">
+              <li class="filters__item">google.com</li>
+              <li class="filters__item">time.com</li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
-
-      <footer class="main-footer">
-        <div class="container container--small">
-          © 2016 - 2017 Askcolleagues
+      <footer class="main-footer main-footer--dark main-footer__bordered">
+        <ul class="nav footer-navigation text-center push-half--bottom">
+          <li class="nav__item footer-navigation__item">
+            <a class="footer-navigation__link" href="">A&amp;A</a>
+          </li>
+          <li class="nav__item footer-navigation__item">
+            <a class="footer-navigation__link" href="">Marketplace</a>
+          </li>
+          <li class="nav__item footer-navigation__item">
+            <a class="footer-navigation__link" href="">About</a>
+          </li>
+          <li class="nav__item footer-navigation__item">
+            <a class="footer-navigation__link" href="">Privacy</a>
+          </li>
+          <li class="nav__item footer-navigation__item">
+            <a class="footer-navigation__link" href="">Contact</a>
+          </li>
+        </ul>
+        <div class="text--small">
+            © 2016 - 2017 Askcolleagues
         </div>
       </footer>
     </div>

@@ -23,3 +23,12 @@
 .button-gradient--default {
   @include button-style($btn-default-color, #E6EBEE, $btn-default-border);
 }
+
+.button--white {
+  @include button-style(#717171, white, #CED1E2);
+}
+
+.button--brand {
+  @include button-style($color-brand, white, #BBC8C6);
+  background: linear-gradient(to bottom, white, #EBF2F1);
+}

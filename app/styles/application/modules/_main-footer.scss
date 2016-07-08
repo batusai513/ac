@@ -10,4 +10,10 @@
     bottom: 0;
     left: 0;
   }
+  &--dark{
+    color: #A5A5A5;
+  }
+  &__bordered{
+    border-top: 1px solid $brand-ui;
+  }
 }
