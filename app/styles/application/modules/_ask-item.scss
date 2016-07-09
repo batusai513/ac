@@ -1,6 +1,13 @@
 .ask-item{
+  &--demo{
+    max-width: em(570);
+  }
+  & + &{
+    border-top: 1px solid $brand-ui;
+    margin-top: $base-spacing-unit;
+    padding-top: $base-spacing-unit;
+  }
   @include rem;
-  max-width: em(570);
   &__container{
     background-color: #F8F8F9;
     border: 1px solid #EEEEEE;

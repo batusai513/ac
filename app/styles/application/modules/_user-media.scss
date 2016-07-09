@@ -1,0 +1,8 @@
+.user-media{
+  @include rem;
+  &__name{
+    display: inline-block;
+    padding-top: em(2);
+    font-size: em(14);
+  }
+}
