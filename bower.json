@@ -4,7 +4,10 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "modernizr": "~2.8.1",
-    "normalize-css": "normalize.css#^4.1.1"
+    "normalize-css": "normalize.css#^4.1.1",
+    "trumbowyg": "^2.1.0",
+    "magnific-popup": "^1.1.0",
+    "selectize": "^0.12.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

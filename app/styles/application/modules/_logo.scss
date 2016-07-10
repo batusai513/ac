@@ -1,23 +1,53 @@
-@mixin logo-variant($bg-position) {
-  & > a{
-    background-position: $bg-position;
-  }
+@mixin icon-box() {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
 }
 
 .main-logo{
   font-size: 1em;
   margin: 0;
   & > a{
-    @extend %main-sprite;
+    @include cssSprite($logo-green);
+    @include icon-box;
     @extend %image-replace;
-    background-position: -9px -12px;
-    width: 178px;
-    height: 35px;
-    vertical-align: middle;
   }
 }
 
 .main-logo--dark{
-  @include logo-variant(-9px -58px);
+  > a{
+    @include bgPosition($logo);
+    @include spriteSize($logo);
+  }
 }
 
+
+.icon{
+  @extend %image-replace;
+  @include icon-box;
+  @include cssSprite;
+  &--bubbles{
+    @include bgPosition($bubbles);
+    @include spriteSize($bubbles);
+    a:hover > &,
+    .is-active &{
+      @include bgPosition($bubbles-green);
+    }
+  }
+  &--gift{
+    @include bgPosition($gift);
+    @include spriteSize($gift);
+    a:hover > &,
+    .is-active &{
+      @include bgPosition($gift-green);
+    }
+  }
+  &--thumbs-up{
+    @include bgPosition($thumbs-up);
+    @include spriteSize($thumbs-up);
+  }
+  &--thumbs-down{
+    @include bgPosition($thumbs-down);
+    @include spriteSize($thumbs-down);
+  }
+}

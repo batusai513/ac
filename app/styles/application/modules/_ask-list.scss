@@ -1,0 +1,13 @@
+.ask-list{
+  @include rem(13);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  &__item{
+    color: #959595;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: $brand-ui;
+    line-height: 3;
+  }
+}

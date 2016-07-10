@@ -1,5 +1,10 @@
 .pane{
 	padding: $base-spacing-unit 0;
+  color: #4A4A4A;
+  &__title{
+    font-weight: 400;
+    color: #5A4940;
+  }
   &__text-container{
     max-width: 400px;
     margin-left: auto;

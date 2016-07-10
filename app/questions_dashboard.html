@@ -12,6 +12,9 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
+    <link rel="stylesheet" href="/bower_components/selectize/dist/css/selectize.css" />
+    <link rel="stylesheet" href="/bower_components/trumbowyg/dist/ui/trumbowyg.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -40,7 +43,7 @@
                   </a>
                 </h1>
               </div><div class="grid__item small--one-half">
-                <form action="#">
+                <form class="header-search" action="#">
                   <div class="input-group">
                     <input class="form-control input--shadow input--small" type="text">
                     <span class="input-group-btn">
@@ -53,11 +56,17 @@
           </div><div class="grid__item large--one-quarter text-center small--text-end">
             <nav>
               <ul class="nav main-navigation flush--bottom">
-                <li class="nav__item main-navigation__item vertical-align--middle">
-                  <a class="main-navigation__link" href="/question_and_answers.html">Q&amp;A</a>
-                </li>
                 <li class="nav__item main-navigation__item vertical-align--middle is-active">
-                  <a class="main-navigation__link" href="/marketplace_dashboard.html">Marketplace</a>
+                  <a class="main-navigation__link" href="/questions_dashboard.html">
+                    <span class="icon icon--bubbles"></span>
+                    Q&amp;A
+                  </a>
+                </li>
+                <li class="nav__item main-navigation__item vertical-align--middle">
+                  <a class="main-navigation__link" href="/marketplace_dashboard.html">
+                    <span class="icon icon--gift"></span>
+                    Marketplace
+                  </a>
                 </li>
                 <li class="nav__item main-navigation__item vertical-align--middle">
                   <div class="media user-media">
@@ -80,7 +89,7 @@
           <div class="grid">
             <div class="grid__item large--seven-tenths">
               <section>
-                <h1 class="epsilon bordered-item">Top Questions</h1>
+                <h1 class="zeta bordered-item">Top Questions</h1>
                 <article class="ask-item">
                   <div class="push--bottom">
                     <p class="ask-item__meta">Recommendation in London  · May 4 · Things To Do </p>
@@ -203,7 +212,7 @@
                 </article>
               </section>
             </div><div class="grid__item large--three-tenths">
-              <button class="button button--brand button--small button--block push--bottom">New Question</button>
+              <button class="button button--brand button--small button--block push--bottom js-new-question">New Question</button>
             </div>
           </div>
         </div><div class="grid__item medium--one-fifth">
@@ -242,7 +251,7 @@
         </div>
       </div>
 
-      <footer class="main-footer main-footer--dark main-footer__bordered">
+      <footer class="main-footer main-footer--dark main-footer--spaced main-footer__bordered">
         <ul class="nav footer-navigation text-center push-half--bottom">
           <li class="nav__item footer-navigation__item">
             <a class="footer-navigation__link" href="">A&amp;A</a>
@@ -266,6 +275,112 @@
       </footer>
     </div>
 
+    <div class="mfp-hide panel panel--medium popup-content mfp-with-anim" id="new-item-popup">
+      <div class="panel__body">
+        <div class="grid">
+          <div class="grid__item one-third">
+            <ul class="ask-list">
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  EDUCATION
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  RESTAURANT
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  THINGS TO DO
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  AUTOMOTIVE
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  EVENT PLANNING
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  HEALTH &amp; MEDICAL
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  HOME SERVICES
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  LOCAL SERVICES
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  PROFESSIONAL SERVICES
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  REAL STATE
+                </span>
+              </li>
+              <li class="ask-list__item">
+                <span class="ask-list__icon icon"></span>
+                <span class="ask-list__text">
+                  OTHER
+                </span>
+              </li>
+            </ul>
+          </div><div class="grid__item two-thirds">
+            <h1 class="bordered-item delta push--bottom">New Question in Education</h1>
+            <form action="">
+              <div class="form-group">
+                <label class="sr-only" for="question_title">question_title</label>
+                <input id="question_title" name="question_title" placeholder="Question Title" type="text" class="form-control input--small">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="question_body">Question Body</label>
+                <textarea name="question_body" id="question_body" cols="30" rows="7" class="form-control"></textarea>
+              </div>
+              <h2 class="zeta">Question answered by Someone who:</h2>
+              <div class="form-group">
+                <label for="works_for">Works for:</label>
+                <input class="js-tags" name="works_for" id="works_for" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="lives_in">Lives in:</label>
+                <input class="js-tags" name="lives_in" id="lives_in" type="text" />
+              </div>
+              <div class="form group">
+                <label for="">Attachment</label>
+                <input type="file">
+              </div>
+              <hr class="rule">
+              <div class="text--end">
+                <input type="submit" class="button button--small button--brand button--wide" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -279,6 +394,11 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/trumbowyg/dist/trumbowyg.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="/bower_components/sifter/sifter.js"></script>
+    <script src="/bower_components/microplugin/src/microplugin.js"></script>
+    <script src="/bower_components/selectize/dist/js/selectize.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -8,13 +8,13 @@
   /* start state */
   .mfp-with-anim {
     opacity: 0;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.15s ease-in-out;
     transform: scale(0.8);
   }
 
   &.mfp-bg {
     opacity: 0;
-    transition: all 0.1s ease-out;
+    transition: all 0.15s ease-out;
   }
 
   /* animate in */
@@ -57,7 +57,7 @@
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.5s;
 
-    @include transform(scale(0) rotate(500deg));
+    transform: scale(0) rotate(500deg);
   }
 
   &.mfp-bg {
@@ -69,7 +69,7 @@
   &.mfp-ready {
     .mfp-with-anim {
       opacity: 1;
-      @include transform(scale(1) rotate(0deg));
+      transform: scale(1) rotate(0deg);
     }
     &.mfp-bg {
       opacity: 0.8;
@@ -80,7 +80,7 @@
   &.mfp-removing {
 
     .mfp-with-anim {
-      @include transform(scale(0) rotate(500deg));
+      transform: scale(0) rotate(500deg);
       opacity: 0;
     }
     &.mfp-bg {
@@ -105,7 +105,7 @@
     opacity: 0;
     transition: all 0.3s;
 
-    @include transform(translateX(-50px));
+    transform: translateX(-50px);
   }
 
   &.mfp-bg {
@@ -117,7 +117,7 @@
   &.mfp-ready {
     .mfp-with-anim {
       opacity: 1;
-      @include transform(translateX(0));
+      transform: translateX(0);
     }
     &.mfp-bg {
       opacity: 0.8;
@@ -128,7 +128,7 @@
   &.mfp-removing {
 
     .mfp-with-anim {
-      @include transform(translateX(50px));
+      transform: translateX(50px);
       opacity: 0;
     }
     &.mfp-bg {
@@ -156,7 +156,7 @@
     opacity: 0;
     transition: all 0.2s;
 
-    @include transform(translateY(-100px));
+    transform: translateY(-100px);
   }
 
   &.mfp-bg {
@@ -168,7 +168,7 @@
   &.mfp-ready {
     .mfp-with-anim {
       opacity: 1;
-      @include transform(translateY(0));
+      transform: translateY(0);
     }
     &.mfp-bg {
       opacity: 0.8;
@@ -179,7 +179,7 @@
   &.mfp-removing {
 
     .mfp-with-anim {
-      @include transform(translateY(-50px));
+      transform: translateY(-50px);
       opacity: 0;
     }
     &.mfp-bg {
@@ -200,7 +200,7 @@
 
 
   .mfp-content {
-    @include perspective(2000px);
+    perspective: 2000px;
   }
 
   /* start state */
@@ -208,7 +208,7 @@
     opacity: 0;
     transition: all 0.3s ease-in-out;
     transform-style: preserve-3d;
-    @include transform(rotateY(-60deg));
+    transform: rotateY(-60deg);
   }
 
 
@@ -221,7 +221,7 @@
   &.mfp-ready {
     .mfp-with-anim {
       opacity: 1;
-      @include transform(rotateY(0deg));
+      transform: rotateY(0deg);
     }
     &.mfp-bg {
       opacity: 0.8;
@@ -232,7 +232,7 @@
   &.mfp-removing {
 
     .mfp-with-anim {
-      @include transform(rotateY(60deg));
+      transform: rotateY(60deg);
       opacity: 0;
     }
     &.mfp-bg {
@@ -257,7 +257,7 @@
   .mfp-with-anim {
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    @include transform(scale(1.3));
+    transform: scale(1.3);
   }
 
   &.mfp-bg {
@@ -269,7 +269,7 @@
   &.mfp-ready {
     .mfp-with-anim {
       opacity: 1;
-      @include transform(scale(1));
+      transform: scale(1);
     }
     &.mfp-bg {
       opacity: 0.8;
@@ -280,7 +280,7 @@
   &.mfp-removing {
 
     .mfp-with-anim {
-      @include transform(scale(1.3));
+      transform: scale(1.3);
       opacity: 0;
     }
     &.mfp-bg {

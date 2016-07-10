@@ -1,0 +1,25 @@
+@mixin label-box-variant($bg, $color, $border){
+  background-color: $bg;
+  color: $color;
+  border-color: $border;
+}
+
+.label-box{
+  @include rem(13);
+  border-radius: $border-radius-base;
+  line-height: 1;
+  display: inline-block;
+  padding: 5px 6px;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: bold;
+  &--neutral{
+    @include label-box-variant(#EEEEEE, #959595, transparent);
+  }
+  &--ok{
+    @include label-box-variant(#F1F8FB, #276BAF, #BACADD);
+  }
+  &--bad{
+    @include label-box-variant(#FFF8F7, #FA6252, #FECECA);
+  }
+}

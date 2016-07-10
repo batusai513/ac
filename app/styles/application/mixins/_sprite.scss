@@ -1,0 +1,36 @@
+$spritePath: '/images/sprite';
+$spriteURL: $spritePath + '.svg';
+$spritex2URL: $spritePath + '.png';
+$bgiSizeW: 430px;
+$bgiSizeH: 430px;
+$thumbs-down: 12px 11px $spriteURL -23px -140px $spritex2URL;
+$thumbs-up: 12px 11px $spriteURL -9px -140px $spritex2URL;
+$bubbles: 15px 15px $spriteURL -9px -104px $spritex2URL;
+$gift: 15px 15px $spriteURL -26px -105px $spritex2URL;
+$bubbles-green: 15px 15px $spriteURL -9px -121px $spritex2URL;
+$gift-green: 15px 15px $spriteURL -26px -122px $spritex2URL;
+$logo: 160px 31px $spriteURL -13px -59px $spritex2URL;
+$logo-green: 178px 38px $spriteURL -9px -8px $spritex2URL;
+
+@mixin spriteSize($spriteVals){
+  width: nth( $spriteVals, 1 );
+  height: nth( $spriteVals, 2 );
+}
+
+@mixin bgPosition($spriteVals){
+  background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
+}
+
+@mixin cssSprite( $spriteVals: 0 0 $spriteURL 0 0 $spritex2URL ) {
+  background-repeat: no-repeat;
+  background-image: url( #{ nth( $spriteVals, 3 ) } );
+  @include spriteSize($spriteVals);
+  @include bgPosition($spriteVals);
+  .no-svg &{
+    background-image: url( #{ nth( $spriteVals, 6 ) } );
+  }
+  // @media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ) {
+  //   background-image: url( #{ nth( $spriteVals, 6 ) } );
+  //   background-size: $bgiSizeW $bgiSizeH;
+  // }
+}

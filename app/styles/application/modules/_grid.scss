@@ -66,10 +66,26 @@
   @extend %medium--four-fifths;
 }
 
+.large--one-fifth{
+  @extend %large--one-fifth;
+}
+
+.large--four-fifths{
+  @extend %large--four-fifths;
+}
+
 .large--three-tenths{
   @extend %large--three-tenths;
 }
 
 .large--seven-tenths{
   @extend %large--seven-tenths;
+}
+
+.medium--three-tenths{
+  @extend %medium--three-tenths;
+}
+
+.medium--seven-tenths{
+  @extend %medium--seven-tenths;
 }
