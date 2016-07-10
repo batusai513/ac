@@ -12,5 +12,14 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
+  },
+ "overrides":{
+    "trumbowyg" : {
+         "main": [
+            "dist/ui/sass/trumbowyg.scss",
+            "dist/ui/trumbowyg.css",
+            "dist/trumbowyg.js"
+          ]
+    }
   }
 }

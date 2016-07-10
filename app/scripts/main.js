@@ -1,5 +1,22 @@
+/* global $:true */
+'use strict';
+
+function createTagElement(element){
+  return $(element).selectize({
+      plugins: ['remove_button'],
+      delimiter: ',',
+      persist: false,
+      create: function(input) {
+          return {
+              value: input,
+              text: input
+          };
+      }
+  });
+}
+
 $(() => {
-  $(".js-new-question").magnificPopup({
+  $('.js-new-question').magnificPopup({
     type: 'inline',
     items: {
       src: '#new-item-popup'
@@ -14,7 +31,7 @@ $(() => {
     }
   });
 
-  $(".js-response-editor").trumbowyg({
+  $('.js-response-editor').trumbowyg({
     resetCss: true,
     btns: [
       ['viewHTML', 'bold', 'italic', 'unorderedList', 'orderedList'],
@@ -22,17 +39,3 @@ $(() => {
     ]
   });
 });
-
-function createTagElement(element){
-  return $(element).selectize({
-      plugins: ['remove_button'],
-      delimiter: ',',
-      persist: false,
-      create: function(input) {
-          return {
-              value: input,
-              text: input
-          }
-      }
-  });
-}
