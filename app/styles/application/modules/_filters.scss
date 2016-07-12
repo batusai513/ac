@@ -11,8 +11,9 @@
     margin: 0;
     margin-bottom: $half-spacing-unit / 2;
   }
-  &__item{
-
+  &__edit{
+    font-size: em(13);
+    color: #959595;
   }
 }
 

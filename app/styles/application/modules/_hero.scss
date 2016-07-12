@@ -30,7 +30,6 @@
   color: white;
   padding: $base-spacing-unit * 5 0 $base-spacing-unit * 4;
   @media #{$small} {
-    background-size: auto;
     padding: $base-spacing-unit * 7 0 $base-spacing-unit;
     @include rem(500px, height);
   }
@@ -40,9 +39,6 @@
   background-image: url('../images/buildings-bottom.jpg');
   padding-top: 0;
   padding-bottom: 0;
-  @media #{$small} {
-    background-size: auto;
-  }
   &__content{
     padding-top: $base-spacing-unit * 4;
     padding-bottom: $base-spacing-unit * 3;

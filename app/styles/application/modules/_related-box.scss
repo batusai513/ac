@@ -1,3 +1,11 @@
 .related-box{
   @include rem(13);
+  &__link{
+    color: #276BAF;
+    text-decoration: underline;
+    &:hover{
+      color: darken(#276BAF, 10%);
+      text-decoration: underline;
+    }
+  }
 }
