@@ -9,5 +9,13 @@
     border-style: solid;
     border-color: $brand-ui;
     line-height: 3;
+    &:hover{
+      color: black;
+    }
+  }
+  &__icon{
+    margin-right: $half-spacing-unit / 2;
+    width: 1.2em;
+    height: 1.2em;
   }
 }
