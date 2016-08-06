@@ -1,5 +1,6 @@
 .user-box{
   @include rem;
+  line-height: 1.45;
   &__name{
     color: black;
     padding-top: em(2);

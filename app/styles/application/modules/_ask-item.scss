@@ -43,17 +43,45 @@
   }
 }
 
+.item-spaced{
+  padding-top: $base-spacing-unit;
+  padding-bottom: $base-spacing-unit;
+  border-bottom: 1px solid $brand-ui;
+  &:last-child{
+    border-bottom: 0;
+  }
+}
+
+.list-block{
+  @include rem(13);
+  line-height: $line-height-base;
+  &__link{
+    display: block;
+    color: $gray;
+    padding: 3px 8px;
+    margin-bottom: 2px;
+    border-radius: $border-radius-small;
+    &:hover{
+      color: $gray-dark;
+    }
+    &.is-active,
+    &:hover{
+      background-color: $brand-ui;
+    }
+  }
+}
+
 .slider{
   -webkit-backface-visibility: hidden;
   white-space: nowrap;
-  margin: 0 20px;
+  margin: 0 10px;
   position: relative;
   &__slide{
     display: inline-block;
     white-space: normal;
-    width: 346px;
-    margin-left: 6px;
-    margin-right: 6px;
+    width: 353px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 }
 .slick-arrow{
