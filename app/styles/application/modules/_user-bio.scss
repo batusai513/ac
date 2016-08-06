@@ -5,12 +5,17 @@
   margin-bottom: $base-spacing-unit;
   border-bottom: 2px solid $brand-ui;
   &__photo{
-    float: left;
-    margin-right: $base-spacing-unit;
     overflow: hidden;
     width: 142px;
     height: 142px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $half-spacing-unit;
     border-radius: 50%;
+    @media #{$small} {
+      float: left;
+      margin-right: $base-spacing-unit;
+    }
   }
   &__data{
     overflow: hidden;
