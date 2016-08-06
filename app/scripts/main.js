@@ -38,4 +38,5 @@ $(() => {
       ['link', 'insertImage', 'fullscreen']
     ]
   });
+
 });

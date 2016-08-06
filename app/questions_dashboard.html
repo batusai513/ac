@@ -70,13 +70,21 @@
                   </a>
                 </li>
                 <li class="nav__item main-navigation__item vertical-align--middle">
-                  <div class="media user-media push-half--left">
-                    <div class="media__img media__img--small">
-                      <img alt="" class="img--round" src="images/dummy-user-small-1.jpg" width="28">
+                  <div class="dropdown">
+                    <div class="media user-media push-half--left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="media__img media__img--small">
+                        <img alt="" class="img--round" src="images/dummy-user-small-1.jpg" width="28">
+                      </div>
+                      <div class="media__body">
+                        <a class="main-navigation__link user-media__name" href="#">Brian</a>
+                      </div>
                     </div>
-                    <div class="media__body">
-                      <a class="main-navigation__link user-media__name" href="#">Brian</a>
-                    </div>
+                    <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Settings</a></li>
+                      <li><a href="#">Report bug</a></li>
+                      <li><a href="#">Log out</a></li>
+                    </ul>
                   </div>
                 </li>
               </ul>
@@ -442,10 +450,12 @@
     <script src="/bower_components/sifter/sifter.js"></script>
     <script src="/bower_components/microplugin/src/microplugin.js"></script>
     <script src="/bower_components/selectize/dist/js/selectize.js"></script>
+    <script src="/bower_components/gilbitron/Dropit/dropit.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/dropdown.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
