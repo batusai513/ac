@@ -12,6 +12,8 @@
     background-color: #F8F8F9;
     border: 1px solid #EEEEEE;
     padding: em($base-spacing-unit);
+  }
+  &__container-large{
     @media #{$medium} {
       padding: em(39) em(72);
     }
