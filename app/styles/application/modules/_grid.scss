@@ -10,6 +10,10 @@
   @extend %grid--full;
 }
 
+.grid--wide{
+  @extend %grid--wide;
+}
+
 .grid--narrow{
   @extend %grid--narrow;
 }
@@ -62,8 +66,20 @@
   @extend %medium--one-third;
 }
 
+.medium--two-thirds{
+  @extend %medium--two-thirds;
+}
+
 .medium--one-fifth{
   @extend %medium--one-fifth;
+}
+
+.medium--two-fifths{
+  @extend %medium--two-fifths;
+}
+
+.medium--three-fifths{
+  @extend %medium--three-fifths;
 }
 
 .medium--four-fifths{
