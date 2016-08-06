@@ -1,0 +1,25 @@
+.user-bio{
+  @include rem;
+  padding-top: $base-spacing-unit;
+  padding-bottom: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit;
+  border-bottom: 2px solid $brand-ui;
+  &__photo{
+    float: left;
+    margin-right: $base-spacing-unit;
+    overflow: hidden;
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+  }
+  &__data{
+    overflow: hidden;
+  }
+  &__title{
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  &__subtitle{
+    font-size: em(20);
+  }
+}

@@ -45,7 +45,7 @@
                   </a>
                 </h1>
               </div><div class="grid__item small--one-half">
-                <form action="#">
+                <form class="header-search" action="#">
                   <div class="input-group">
                     <input class="form-control input--shadow input--small" type="text">
                     <span class="input-group-btn">
@@ -64,7 +64,7 @@
                     Q&amp;A
                   </a>
                 </li>
-                <li class="nav__item main-navigation__item vertical-align--middle is-active">
+                <li class="nav__item main-navigation__item vertical-align--middle">
                   <a class="main-navigation__link" href="/marketplace_dashboard.html">
                     <span class="icon icon--gift"></span>
                     Marketplace
@@ -81,7 +81,7 @@
                       </div>
                     </div>
                     <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
-                      <li><a href="#">Profile</a></li>
+                      <li><a href="profile.html">Profile</a></li>
                       <li><a href="settings.html">Settings</a></li>
                       <li><a href="#">Report bug</a></li>
                       <li><a href="#">Log out</a></li>
@@ -94,12 +94,22 @@
         </div>
       </header>
 
-      <div class="grid grid--rev">
-        <div class="grid__item medium--four-fifths">
-          <div class="grid">
-            <div class="grid__item large--seven-tenths">
-              <section>
-                <h1 class="zeta bordered-item">Top Marketplace</h1>
+      <div class="grid">
+        <div class="grid__item three-quarters">
+          <section class="user-bio clearfix">
+            <div class="user-bio__photo">
+              <img src="https://randomuser.me/api/portraits/lego/6.jpg" alt="" width="142" />
+            </div>
+            <div class="user-bio__data">
+              <h1 class="user-bio__title">Kay Ade</h1>
+              <p class=user-bio__subtitle>Living the dream!</p>
+              <!-- <p class="push-half--bottom"><a href="#">Add profile bio</a></p> -->
+              <!-- <p><a href="#">Write a description about yourself</a></p> -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolorem ducimus aperiam fugit nostrum voluptates odio consequuntur assumenda culpa voluptatibus tempora, qui, eveniet possimus animi, hic explicabo. Facilis, quibusdam ab!</p>
+            </div>
+          </section>
+          <div class="grid grid--rev">
+            <div class="grid__item medium--three-quarters">
                 <article class="ask-item">
                   <div class="push--bottom">
                     <p class="ask-item__meta">Question asked · May 4 · Electronics</p>
@@ -122,122 +132,54 @@
                       <img alt="" src="images/dummy-attachment.jpg" width="86">
                       <img alt="" src="images/dummy-attachment.jpg" width="86">
                     </div>
-                    <a href="#" class="button button--info button--extra-small button--wide">
-                      I'm interested
-                    </a>
                   </div>
-
-                  <section class="ask-comments push--bottom">
-                    <h1 class="sr-only">Item Comments</h1>
-
-                    <div class="media push--bottom">
+                </article>
+                <article class="ask-item">
+                  <div class="push--bottom">
+                    <p class="ask-item__meta">Recommendation in London  · May 4 · Things To Do </p>
+                    <h1 class="ask-item__title">What can I do when I visit Thailand. Any ideas?</h1>
+                    <div class="media push-half--bottom user-box">
                       <div class="media__img media__img--small">
-                        <img alt="" class="img--round" src="images/dummy-user-small-1.jpg" width="28">
+                        <img class="img--round" width="40" height="40" src="images/dummy-user-1.jpg" alt="Michelle Herrera">
                       </div>
                       <div class="media__body">
-                        <form action="">
-                          <div class="grid grid--narrow">
-                            <div class="grid__item three-quarters">
-                              <input class="form-control input--extra-small" placeholder="Leave public comment for saller" type="text">
-                            </div><div class="grid__item one-quarter">
-                              <input class="button button--brand button--extra-small button--block" type="submit" value="Comment">
-                            </div>
-                          </div>
-
-                        </form>
+                        <p class="user-box__name flush--bottom">Michelle Herrera</p>
+                        <p class="user-box__meta flush--bottom">Google, New York</p>
                       </div>
                     </div>
-
-                    <article class="ask-comment push--bottom">
-                      <div class="media">
-                        <div class="media__img media__img--small">
-                          <img alt="" class="img--round" src="images/dummy-user-small-1.jpg" width="28">
-                        </div>
-                        <div class="media__body">
-                          <h1 class="zeta ask-comment__title">Brian Macy <span> · Google, New York</span></h1>
-                          <p class="ask-comment__text">
-                            If you are lonking for a good school for your 4 old, then this is the best school., It is brilliant and teachers are amazing. My son really loves it and this is great value for money.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="ask-comment push--bottom">
-                      <div class="media">
-                        <div class="media__img media__img--small">
-                          <img alt="" class="img--round" src="images/dummy-user-small-1.jpg" width="28">
-                        </div>
-                        <div class="media__body">
-                          <h1 class="zeta ask-comment__title">Brian Macy <span> · Google, New York</span></h1>
-                          <p class="ask-comment__text">
-                            If you are lonking for a good school for your 4 old, then this is the best school., It is brilliant and teachers are amazing. My son really loves it and this is great value for money.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                  </section>
+                    <p class="ask-item__text">
+                      Experience Vurb in every way possible. Discover great sights to visit when traveling. See what Movies are playing nearby. Feel like a laugh or getting your groove on? Buy tickets to live Events, like nearby comedy shows or concerts.
+                    </p>
+                    <a href="#" class="button button--info button--extra-small button--wide">
+                      Answer
+                    </a>
+                  </div>
                 </article>
-              </section>
-            </div><div class="grid__item large--three-tenths">
-              <button class="button button--brand button--small button--block push--bottom">New Add</button>
+            </div><div class="grid__item medium--one-quarter">
+              <div class="filters">
+                <h2 class="epsilon filters__title bordered-item cf">
+                  Settings
+                </h2>
+                <ul class="list-unstyled list-block">
+                  <li class="">
+                    <a class="list-block__link" href="settings.html">Account</a>
+                  </li>
+                  <li class="">
+                    <a class="list-block__link" href="privacy.html">Privacy</a>
+                  </li>
+                  <li class="">
+                    <a class="list-block__link" href="#">Email and Notifications</a>
+                  </li>
+                  <li class="">
+                    <a class="list-block__link is-active" href="profile.html">Profile</a>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </div>
-        </div><div class="grid__item medium--one-fifth">
-          <div class="filters">
-            <h2 class="epsilon filters__title bordered-item split cf">
-              <span class="split__title">
-                By Location
-              </span>
-              <a class="filters__edit" href="#">
-                Edit
-              </a>
-            </h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item split cf">
-              <span class="split__title">
-                By Company
-              </span>
-              <a class="filters__edit" href="#">
-                Edit
-              </a>
-            </h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item split cf">
-              <span class="split__title">
-                By Category
-              </span>
-              <a class="filters__edit" href="#">
-                Edit
-              </a>
-            </h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item split cf">
-              <span class="split__title">
-                By Time
-              </span>
-              <a class="filters__edit" href="#">
-                Edit
-              </a>
-            </h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-          </div>
-
+        </div><div class="grid__item one-quarter">
+          <h2 class="zeta bordered-item">Answer Views</h2>
         </div>
       </div>
 
@@ -274,6 +216,7 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+
 
 
     <!-- build:js scripts/vendor.js -->

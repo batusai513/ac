@@ -70,6 +70,14 @@
   @extend %medium--two-thirds;
 }
 
+.medium--one-quarter{
+  @extend %medium--one-quarter;
+}
+
+.medium--three-quarters{
+  @extend %medium--three-quarters;
+}
+
 .medium--one-fifth{
   @extend %medium--one-fifth;
 }
