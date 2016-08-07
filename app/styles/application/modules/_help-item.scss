@@ -1,0 +1,14 @@
+.help-item{
+  @include rem;
+  &__title{
+    font-size: em(22);
+    border-color: $color-brand;
+  }
+  &__text-container{
+    padding-left: $half-spacing-unit;
+    padding-right: $half-spacing-unit;
+  }
+  &__text{
+    font-size: em(14);
+  }
+}
