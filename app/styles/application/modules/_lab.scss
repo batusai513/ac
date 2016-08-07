@@ -1,0 +1,8 @@
+.lab{
+  @include rem($font-size-small);
+  background-color: $brand-ui;
+  display: inline-block;
+  padding: 2px 4px;
+  line-height: 1;
+  border-radius: 2px;
+}

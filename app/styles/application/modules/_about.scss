@@ -1,0 +1,24 @@
+.about{
+  text-align: center;
+  &__main-title{
+    font-family: 'HelveticaNeue-UltraLight','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    font-size: em(45);
+    font-weight: 100;
+    &.first{
+      @media #{$medium} {
+        margin-top: em(40, 45);
+      }
+    }
+    @media #{$medium} {
+      font-size: em(82);
+      margin-bottom: em(40, 82);
+    }
+  }
+  &__text{
+    font-size: em(15);
+    @media #{$medium} {
+      font-size: em(23);
+      margin-bottom: em(40);
+    }
+  }
+}
