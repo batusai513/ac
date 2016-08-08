@@ -2,16 +2,11 @@
   @include rem;
   overflow: hidden;
   &__link{
-    background-color: #70ABA9;
-    color: white;
     display: block;
     border-radius: 0 0 $border-radius-base $border-radius-base;
-    font-size: em(12);
+    font-size: em(11);
     text-align: center;
     padding: 3px;
     margin-bottom: 4px;
-    &:focus{
-      color: white;
-    }
   }
 }

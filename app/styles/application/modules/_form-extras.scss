@@ -20,8 +20,8 @@ $custom-input-font-size: $font-size-base - 1;
     position: relative;
     margin: 0;
     margin-right: em(3, $custom-input-font-size);
-    width: em(14, $custom-input-font-size);
-    height: em(14, $custom-input-font-size);
+    width: em(13, $custom-input-font-size);
+    height: em(13, $custom-input-font-size);
     vertical-align: middle;
     &:after{
       content: "";
@@ -36,7 +36,7 @@ $custom-input-font-size: $font-size-base - 1;
     &:checked + .custom-input__label{
       &:after{
         content: '✓';
-        font-size: 1em;
+        font-size: 0.8em;
       }
     }
   }
@@ -47,7 +47,7 @@ $custom-input-font-size: $font-size-base - 1;
     &:checked + .custom-input__label{
       &:after{
         content: '●';
-        font-size: 1em;
+        font-size: 0.8em;
       }
     }
   }

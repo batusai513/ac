@@ -91,6 +91,34 @@ $(() => {
     e.preventDefault();
     var $el = $(this);
     $el.parent().find('.js-item-cats').toggleClass('hidden');
+  });
+
+  var $moreList = $('.js-more');
+  $moreList.each(function(ind, el){
+    var isOpen = false;
+    var $el = $(el);
+    var $trigger = $el.next('.js-show-more-trigger');
+    var $items = $('.js-more-item');
+    var wrapperHeight = getItemsHeight(5, $items);
+    $el.height(wrapperHeight);
+    $trigger.on('click', function(e){
+      e.preventDefault();
+      if(isOpen){
+        $el.height(wrapperHeight);
+        isOpen = false;
+      }else{
+        $el.height('auto');
+        isOpen = true;
+      }
+    })
   })
 
 });
+
+function getItemsHeight(number, items){
+  var h = 0;
+  for(var i = 0; i < number; i++){
+    h = h + $(items[i]).outerHeight()
+  }
+  return h;
+}
