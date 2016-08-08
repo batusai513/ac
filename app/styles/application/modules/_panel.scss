@@ -148,6 +148,11 @@ $panel-background-color-default:         #fff !default;
   max-width: 900px;
 }
 
+.panel--registration{
+  @extend .panel--center;
+  max-width: 650px;
+}
+
 .panel--default{
   @include panel-variant($brand-ui, black, #FAFAFA);
 }

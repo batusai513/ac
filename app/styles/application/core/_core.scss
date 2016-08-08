@@ -24,6 +24,11 @@ body {
   overflow-x: hidden;
 }
 
+.body-bg{
+  background-image: url("../images/buildings-top.jpg");
+  background-size: cover;
+}
+
 // Reset fonts for relevant elements
 input,
 button,
