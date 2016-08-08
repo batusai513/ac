@@ -30,24 +30,24 @@ $custom-input-font-size: $font-size-base - 1;
     }
   }
   &[type=checkbox]{
-    & + label{
+    & + .custom-input__label{
       border-radius: 3px;
     }
-    &:checked + label{
+    &:checked + .custom-input__label{
       &:after{
-        content: '\e606';
-        font-size: 0.9em;
+        content: '✓';
+        font-size: 1em;
       }
     }
   }
   &[type=radio]{
-    & + label{
+    & + .custom-input__label{
       border-radius: 100%;
     }
-    &:checked + label{
+    &:checked + .custom-input__label{
       &:after{
         content: '●';
-        font-size: 0.8em;
+        font-size: 1em;
       }
     }
   }

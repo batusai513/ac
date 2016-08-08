@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
     <link rel="stylesheet" href="/bower_components/selectize/dist/css/selectize.css" />
     <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="/bower_components/EasyAutocomplete/dist/easy-autocomplete.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -108,7 +109,66 @@
           </section>
           <div class="grid grid--rev">
             <div class="grid__item medium--three-quarters">
-              <h2 class="zeta bordered-item">Answers</h2>
+              <div class="split bordered-item">
+                <h2 class="zeta split__title">Knows About</h2>
+                <a class="text--small js-toggle-add-location" href="#">Add new location</a>
+              </div>
+              <form class="js-add-location-form hidden" action="">
+                <div class="form-group">
+                  <label class="sr-only" for="">Select Location</label>
+                  <input class="js-locations form-control" type="text">
+                </div>
+              </form>
+              <div id="user-knows">
+              <article class="dex-item push--bottom">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">Edit</button>
+                <h1 class="zeta flush dex-item__title">New York</h1>
+                <p class="dex-item__text">Restaurants, Designers, HTML coders, Local services</p>
+                <div class="js-item-cats dex-item__categories hidden">
+                  <form action="">
+                    <label class="block" for="cat1">
+                      <input class="custom custom-input" id="cat1" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </form>
+                </div>
+              </article>
+              <article class="dex-item push--bottom">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">Edit</button>
+                <h1 class="zeta flush dex-item__title">London</h1>
+                <p class="dex-item__text">Hotels, Schools, Developers</p>
+                <div class="js-item-cats dex-item__categories hidden">
+                  <form action="">
+                    <label class="block" for="cat2">
+                      <input class="custom custom-input" id="cat2" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </form>
+                </div>
+              </article>
+              <article class="dex-item push--bottom">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">Edit</button>
+                <h1 class="zeta flush dex-item__title">New York</h1>
+                <p class="dex-item__text">Restaurants, Designers, HTML coders, Local services</p>
+                <div class="js-item-cats dex-item__categories hidden">
+                  <form action="">
+                    <label class="block" for="cat3">
+                      <input class="custom custom-input" id="cat3" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </form>
+                </div>
+              </article>
+              <article class="dex-item push--bottom">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">Edit</button>
+                <h1 class="zeta flush dex-item__title">London</h1>
+                <p class="dex-item__text">Hotels, Schools, Developers</p>
+                <div class="js-item-cats dex-item__categories hidden">
+                  <form action="">
+                    <label class="block" for="cat4">
+                      <input class="custom custom-input" id="cat4" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </form>
+                </div>
+              </article>
+              </div>
             </div><div class="grid__item medium--one-quarter">
               <div class="filters">
                 <h2 class="epsilon filters__title bordered-item cf">
@@ -132,14 +192,13 @@
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div><div class="grid__item medium--one-quarter">
-          <h2 class="zeta bordered-item split">
-            <span class="split__title">Knows About</span>
+          <div class="bordered-item split">
+            <h2 class="zeta  split__title">Knows About</h2>
             <a class="weight--normal text--small" href="about.html">edit</a>
-          </h2>
+          </div>
           <article class="dex-item push--bottom">
             <h1 class="zeta flush dex-item__title">New York</h1>
             <p class="dex-item__text">Restaurants, Designers, HTML coders, Local services</p>
@@ -197,6 +256,8 @@
     <script src="/bower_components/microplugin/src/microplugin.js"></script>
     <script src="/bower_components/selectize/dist/js/selectize.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="/bower_components/EasyAutocomplete/dist/jquery.easy-autocomplete.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -59,6 +59,19 @@
   }
 }
 
+.remove-button{
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px;
+  display: none;
+  :hover > &{
+    display: block;
+  }
+}
+
 .item-spaced{
   padding-top: $base-spacing-unit;
   padding-bottom: $base-spacing-unit;

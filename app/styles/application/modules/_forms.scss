@@ -344,3 +344,12 @@ label>sup {
     opacity: 0;
     filter: alpha(opacity=0);
 }
+
+.easy-autocomplete{
+  width: 100% !important;
+}
+.easy-autocomplete-container{
+  > ul{
+    margin: 0;
+  }
+}

@@ -1,5 +1,6 @@
 .dex-item{
   @include rem($font-size-base - 2);
+  position: relative;
   line-height: 1.6;
   &__title{
     font-size: em(13, $font-size-base - 2);
@@ -9,5 +10,10 @@
   }
   &__extra{
     color: #999;
+  }
+  &__remove{
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
