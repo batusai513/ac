@@ -186,44 +186,105 @@
           </div>
         </div><div class="grid__item medium--one-fifth">
           <div class="filters">
-            <h2 class="epsilon filters__title bordered-item split cf">
-              <span class="split__title">
-                By Location
-              </span>
-              <a class="filters__edit" href="#">
-                Edit
+            <div class="dropdown split cf bordered-item">
+              <h2 class="epsilon split__title flush--bottom filters__title">By Location</h2>
+              <a class="filters__edit"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                Add
               </a>
-            </h2>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li class="islet">
+                  <form action="">
+                    <label for="add-location" class="sr-only">Add Location</label>
+                    <input id="add-location" class="form-control" type="text" placeholder="Add location">
+                  </form>
+                </li>
+              </ul>
+            </div>
             <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
+              <li class="filters__item">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">&times;</button>
+                google.com
+              </li>
+              <li class="filters__item">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">&times;</button>
+                time.com
+              </li>
+            </ul>
+            <div class="dropdown split cf bordered-item">
+              <h2 class="epsilon split__title flush--bottom filters__title">By Company</h2>
+              <a class="filters__edit"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                Add
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li class="islet">
+                  <form action="">
+                    <label for="add-company" class="sr-only">Add Company</label>
+                    <input id="add-company" class="form-control" type="text" placeholder="Add Company">
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">&times;</button>
+                google.com
+              </li>
+              <li class="filters__item">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">&times;</button>
+                time.com
+              </li>
             </ul>
 
-            <h2 class="epsilon filters__title bordered-item split cf">
-              <span class="split__title">
-                By Company
-              </span>
-              <a class="filters__edit" href="#">
-                Edit
-              </a>
+            <h2 class="epsilon filters__title bordered-item cf">
+              By Category
             </h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
-
-            <h2 class="epsilon filters__title bordered-item split cf">
-              <span class="split__title">
-                By Category
-              </span>
-              <a class="filters__edit" href="#">
-                Edit
-              </a>
-            </h2>
-            <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
-            </ul>
+            <div class="show-more js-more">
+              <form action="">
+                <ul class="filters__list">
+                  <li class="filters__item js-more-item">
+                    <label class="block" for="cat1">
+                      <input class="custom custom-input" id="cat1" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                  <li class="filters__item js-more-item">
+                    <label class="block" for="cat2">
+                      <input class="custom custom-input" id="cat2" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                  <li class="filters__item js-more-item">
+                    <label class="block" for="cat3">
+                      <input class="custom custom-input" id="cat3" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                  <li class="filters__item js-more-item">
+                    <label class="block" for="cat4">
+                      <input class="custom custom-input" id="cat4" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                  <li class="filters__item js-more-item">
+                    <label class="block" for="cat1">
+                      <input class="custom custom-input" id="cat1" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                  <li class="filters__item js-more-item">
+                    <label class="block" for="cat2">
+                      <input class="custom custom-input" id="cat2" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                  <li class="filters__item js-more-item">
+                    <label class="block" for="cat3">
+                      <input class="custom custom-input" id="cat3" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                  <li>
+                    <label class="block" for="cat4">
+                      <input class="custom custom-input" id="cat4" type="checkbox"> <span class="custom-input__label"></span>Category
+                    </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <a class="js-show-more-trigger show-more__link" href="#">show more</a>
 
             <h2 class="epsilon filters__title bordered-item split cf">
               <span class="split__title">
@@ -234,8 +295,14 @@
               </a>
             </h2>
             <ul class="filters__list">
-              <li class="filters__item">google.com</li>
-              <li class="filters__item">time.com</li>
+              <li class="filters__item">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">&times;</button>
+                google.com
+              </li>
+              <li class="filters__item">
+                <button class="js-toggle-cat-edit remove-button dex-item__remove text--small">&times;</button>
+                time.com
+              </li>
             </ul>
           </div>
 

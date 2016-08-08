@@ -4,12 +4,18 @@
     font-size: em(15);
     font-weight: 400;
     color: black;
+    line-height: 1.1;
   }
   &__list{
     font-size: em(13);
     list-style-type: none;
     margin: 0;
     margin-bottom: $half-spacing-unit / 2;
+  }
+  &__item{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: relative;
   }
   &__edit{
     font-size: em(13);
