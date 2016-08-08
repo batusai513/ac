@@ -4,7 +4,7 @@ html, body {
 
 .sticky-footer {
   min-height: 100%;
-  margin-bottom: -108px;
+  margin-bottom: -142px;
   &:after {
     content: "";
     display: block;
@@ -12,5 +12,5 @@ html, body {
 }
 
 .sticky-footer:after {
-  height: 108px; 
+  height: 142px;
 }
